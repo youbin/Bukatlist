@@ -1,0 +1,30 @@
+p#notice = notice
+
+p
+  strong B:
+  = @book_detail.b_id
+p
+  strong B title:
+  = @book_detail.b_title
+p
+  strong B category:
+  = @book_detail.b_category
+p
+  strong B author:
+  = @book_detail.b_author
+p
+  strong B translator:
+  = @book_detail.b_translator
+p
+  strong B publisher:
+  = @book_detail.b_publisher
+p
+  strong B publishdate:
+  = @book_detail.b_publishDate
+p
+  strong B date:
+  = @book_detail.b_date
+
+= link_to 'Edit', edit_book_detail_path(@book_detail)
+'|
+= link_to 'Back', book_details_path

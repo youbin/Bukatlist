@@ -1,0 +1,27 @@
+= form_for @direct_enroll do |f|
+  - if @direct_enroll.errors.any?
+    #error_explanation
+      h2 = "#{pluralize(@direct_enroll.errors.count, "error")} prohibited this direct_enroll from being saved:"
+      ul
+        - @direct_enroll.errors.full_messages.each do |message|
+          li = message
+
+  .field
+    = f.label :title
+    = f.text_field :title
+  .field
+    = f.label :category
+    = f.text_field :category
+  .field
+    = f.label :author
+    = f.text_field :author
+  .field
+    = f.label :translator
+    = f.text_field :translator
+  .field
+    = f.label :publisher
+    = f.text_field :publisher
+  .field
+    = f.label :date
+    = f.text_field :date
+  .actions = f.submit 'Save'

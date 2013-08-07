@@ -1,0 +1,31 @@
+h1 Listing book_infos
+
+table
+  tr
+    th B_id
+    th B_title
+    th B_thumb
+    th B_totalstar
+    th B_starnum
+    th B_likecount
+    th B_belongcount
+    th
+    th
+    th
+
+  - @book_infos.each do |book_info|
+    tr
+      td = book_info.b_id
+      td = book_info.b_title
+      td = book_info.b_thumb
+      td = book_info.b_totalStar
+      td = book_info.b_starNum
+      td = book_info.b_likeCount
+      td = book_info.b_belongCount
+      td = link_to 'Show', book_info
+      td = link_to 'Edit', edit_book_info_path(book_info)
+      td = link_to 'Destroy', book_info, :confirm => 'Are you sure?', :method => :delete
+
+br
+
+= link_to 'New Book info', new_book_info_path

@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  b_id: 
+  b_title: MyString
+  b_category: MyString
+  b_author: MyString
+  b_translator: MyString
+  b_publisher: MyString
+  b_publishDate: 2013-08-06 13:59:41
+  b_date: 2013-08-06 13:59:41
+
+two:
+  b_id: 
+  b_title: MyString
+  b_category: MyString
+  b_author: MyString
+  b_translator: MyString
+  b_publisher: MyString
+  b_publishDate: 2013-08-06 13:59:41
+  b_date: 2013-08-06 13:59:41

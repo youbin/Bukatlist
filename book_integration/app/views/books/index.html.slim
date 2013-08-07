@@ -1,0 +1,43 @@
+h1 Listing books
+
+table
+  tr
+    th B_id
+    th B_title
+    th B_thumb
+    th B_totalstar
+    th B_starnum
+    th B_likecount
+    th B_belongcount
+    th B_category
+    th B_author
+    th B_translator
+    th B_publisher
+    th B_publishdate
+    th B_date
+    th
+    th
+    th
+
+  - @books.each do |book|
+    tr
+      td = book.b_id
+      td = book.b_title
+      td = book.b_thumb
+      td = book.b_totalStar
+      td = book.b_starNum
+      td = book.b_likeCount
+      td = book.b_belongCount
+      td = book.b_category
+      td = book.b_author
+      td = book.b_translator
+      td = book.b_publisher
+      td = book.b_publishDate
+      td = book.b_date
+      td = link_to 'Show', book
+      td = link_to 'Edit', edit_book_path(book)
+      td = link_to 'Destroy', book, :confirm => 'Are you sure?', :method => :delete
+
+br
+
+= link_to 'New Book', new_book_path

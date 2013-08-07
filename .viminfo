@@ -1,0 +1,200 @@
+# 이 viminfo 파일은 빔이 만든 것입니다 Vim 7.2.
+# 조심만 한다면 고칠 수도 있습니다!
+
+# 이 파일이 저장되었을 때의 'encoding'의 값
+*encoding=utf-8
+
+
+# hlsearch on (H) or off (h):
+~H
+# 명령 줄 히스토리 (새것부터 오래된 것 순):
+:q
+:wq!
+:wq
+:q!
+:w!
+
+# 찾을 문자열 히스토리 (새것부터 오래된 것 순):
+
+# 표현 히스토리 (새것부터 오래된 것 순):
+
+# 입력 줄 히스토리 (새것부터 오래된 것 순):
+
+# 입력 줄 히스토리 (새것부터 오래된 것 순):
+
+# 레지스터:
+
+# 파일 마크:
+'0  12  0  ~/book_integration/app/controllers/books_controller.rb
+'1  1  0  ~/book_integration/app/views/books/_form.html.slim
+'2  11  15  ~/book/app/views/book_infos/index.html.slim
+'3  1  0  ~/book/app/views/book_infos/index.
+'4  14  2  ~/book/app/views/book_infos/show.html.slim
+'5  4  0  ~/book/app/views/book_infos/edit.html.slim
+'6  8  12  ~/book/app/views/book_infos/show.html.slim
+'7  1  0  ~/book/app/views/book_infos/show.
+'8  3  0  ~/book/app/views/book_infos/new.html.slim
+'9  26  0  ~/book/app/views/book_infos/_form.html.slim
+
+# 점프목록 (새것이 먼저):
+-'  12  0  ~/book_integration/app/controllers/books_controller.rb
+-'  1  0  ~/book_integration/app/controllers/books_controller.rb
+-'  1  0  ~/book_integration/app/views/books/_form.html.slim
+-'  11  15  ~/book/app/views/book_infos/index.html.slim
+-'  1  0  ~/book/app/views/book_infos/index.html.slim
+-'  1  0  ~/book/app/views/book_infos/index.
+-'  14  2  ~/book/app/views/book_infos/show.html.slim
+-'  8  2  ~/book/app/views/book_infos/show.html.slim
+-'  4  0  ~/book/app/views/book_infos/edit.html.slim
+-'  1  0  ~/book/app/views/book_infos/edit.html.slim
+-'  25  0  ~/book/app/views/book_infos/show.html.slim
+-'  1  0  ~/book/app/views/book_infos/show.
+-'  3  0  ~/book/app/views/book_infos/new.html.slim
+-'  1  0  ~/book/app/views/book_infos/new.html.slim
+-'  26  0  ~/book/app/views/book_infos/_form.html.slim
+-'  1  0  ~/book/app/views/book_infos/_form.html.slim
+-'  1  0  ~/book/app/views/book_infos/show.html.slim
+-'  1  0  ~/helloYB.txt
+-'  2  1  ~/helloYB
+-'  1  0  ~/hello
+-'  1  9  ~/helloYB
+-'  1  0  ~/hello
+-'  2  1  ~/helloYB
+-'  1  0  ~/hello
+-'  1  9  ~/helloYB
+-'  1  0  ~/hello
+-'  2  1  ~/helloYB
+-'  1  0  ~/hello
+-'  1  9  ~/helloYB
+-'  1  0  ~/hello
+-'  2  1  ~/helloYB
+-'  1  0  ~/hello
+-'  1  9  ~/helloYB
+-'  1  0  ~/hello
+-'  1  0  ~/helloYB.txt
+-'  2  1  ~/helloYB
+-'  1  0  ~/hello
+-'  1  9  ~/helloYB
+-'  1  0  ~/hello
+-'  2  1  ~/helloYB
+-'  1  0  ~/hello
+-'  1  9  ~/helloYB
+-'  1  0  ~/hello
+-'  2  1  ~/helloYB
+-'  1  0  ~/hello
+-'  1  9  ~/helloYB
+-'  1  0  ~/hello
+-'  2  1  ~/helloYB
+-'  1  0  ~/hello
+-'  1  9  ~/helloYB
+-'  1  0  ~/hello
+-'  1  0  ~/helloYB.txt
+-'  2  1  ~/helloYB
+-'  1  0  ~/hello
+-'  1  9  ~/helloYB
+-'  1  0  ~/hello
+-'  2  1  ~/helloYB
+-'  1  0  ~/hello
+-'  1  9  ~/helloYB
+-'  1  0  ~/hello
+-'  2  1  ~/helloYB
+-'  1  0  ~/hello
+-'  1  9  ~/helloYB
+-'  1  0  ~/hello
+-'  2  1  ~/helloYB
+-'  1  0  ~/hello
+-'  1  9  ~/helloYB
+-'  1  0  ~/hello
+-'  1  0  ~/helloYB.txt
+-'  2  1  ~/helloYB
+-'  1  0  ~/hello
+-'  1  9  ~/helloYB
+-'  1  0  ~/hello
+-'  2  1  ~/helloYB
+-'  1  0  ~/hello
+-'  1  9  ~/helloYB
+-'  1  0  ~/hello
+-'  2  1  ~/helloYB
+-'  1  0  ~/hello
+-'  1  9  ~/helloYB
+-'  1  0  ~/hello
+-'  2  1  ~/helloYB
+-'  1  0  ~/hello
+-'  1  9  ~/helloYB
+-'  1  0  ~/hello
+-'  26  0  ~/book/app/views/book_infos/_form.html.slim
+-'  1  0  ~/book/app/views/book_infos/_form.html.slim
+-'  1  0  ~/helloYB.txt
+-'  2  1  ~/helloYB
+-'  1  0  ~/hello
+-'  1  9  ~/helloYB
+-'  1  0  ~/hello
+-'  2  1  ~/helloYB
+-'  1  0  ~/hello
+-'  1  9  ~/helloYB
+-'  1  0  ~/hello
+-'  2  1  ~/helloYB
+-'  1  0  ~/hello
+-'  1  9  ~/helloYB
+-'  1  0  ~/hello
+
+# 파일내의 마크 히스토리 (새것부터 오래된 순):
+
+> ~/book_integration/app/controllers/books_controller.rb
+	"	12	0
+
+> ~/book_integration/app/views/books/_form.html.slim
+	"	1	0
+
+> ~/book/app/views/book_infos/index.html.slim
+	"	11	15
+	^	11	16
+	.	11	15
+	+	5	12
+	+	6	15
+	+	7	19
+	+	8	17
+	+	9	15
+	+	10	17
+	+	11	15
+
+> ~/book/app/views/book_infos/index.
+	"	1	0
+
+> ~/book/app/views/book_infos/show.html.slim
+	"	14	2
+	^	4	13
+	.	4	12
+	+	4	10
+	+	7	10
+	+	10	10
+	+	13	10
+	+	16	10
+	+	19	10
+	+	22	10
+	+	4	12
+
+> ~/book/app/views/book_infos/edit.html.slim
+	"	4	0
+
+> ~/book/app/views/book_infos/show.
+	"	1	0
+
+> ~/book/app/views/book_infos/new.html.slim
+	"	3	0
+
+> ~/book/app/views/book_infos/_form.html.slim
+	"	26	0
+
+> ~/helloYB.txt
+	"	1	0
+
+> ~/helloYB
+	"	2	1
+	^	2	1
+	.	2	0
+	+	1	8
+	+	2	0
+
+> ~/hello
+	"	1	0

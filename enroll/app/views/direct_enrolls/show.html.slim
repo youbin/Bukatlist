@@ -1,0 +1,24 @@
+p#notice = notice
+
+p
+  strong Title:
+  = @direct_enroll.title
+p
+  strong Category:
+  = @direct_enroll.category
+p
+  strong Author:
+  = @direct_enroll.author
+p
+  strong Translator:
+  = @direct_enroll.translator
+p
+  strong Publisher:
+  = @direct_enroll.publisher
+p
+  strong Date:
+  = @direct_enroll.date
+
+= link_to 'Edit', edit_direct_enroll_path(@direct_enroll)
+'|
+= link_to 'Back', direct_enrolls_path

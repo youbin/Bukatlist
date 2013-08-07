@@ -1,0 +1,27 @@
+p#notice = notice
+
+p
+  strong B_id:
+  = @book_info.b_id
+p
+  strong B_title:
+  = @book_info.b_title
+p
+  strong B_thumb:
+  = @book_info.b_thumb
+p
+  strong B_totalstar:
+  = @book_info.b_totalStar
+p
+  strong B_starnum:
+  = @book_info.b_starNum
+p
+  strong B_likecount:
+  = @book_info.b_likeCount
+p
+  strong B_belongcount:
+  = @book_info.b_belongCount
+
+= link_to 'Edit', edit_book_info_path(@book_info)
+'|
+= link_to 'Back', book_infos_path

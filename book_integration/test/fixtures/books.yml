@@ -1,0 +1,31 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  b_id: 
+  b_title: MyString
+  b_thumb: MyString
+  b_totalStar: 
+  b_starNum: 
+  b_likeCount: 
+  b_belongCount: 
+  b_category: MyString
+  b_author: MyString
+  b_translator: MyString
+  b_publisher: MyString
+  b_publishDate: 2013-08-06 14:23:54
+  b_date: 2013-08-06 14:23:54
+
+two:
+  b_id: 
+  b_title: MyString
+  b_thumb: MyString
+  b_totalStar: 
+  b_starNum: 
+  b_likeCount: 
+  b_belongCount: 
+  b_category: MyString
+  b_author: MyString
+  b_translator: MyString
+  b_publisher: MyString
+  b_publishDate: 2013-08-06 14:23:54
+  b_date: 2013-08-06 14:23:54

@@ -1,0 +1,30 @@
+= form_for @book_info do |f|
+  - if @book_info.errors.any?
+    #error_explanation
+      h2 = "#{pluralize(@book_info.errors.count, "error")} prohibited this book_info from being saved:"
+      ul
+        - @book_info.errors.full_messages.each do |message|
+          li = message
+
+  .field
+    = f.label :b_id
+    = f.text_field :b_id
+  .field
+    = f.label :b_title
+    = f.text_field :b_title
+  .field
+    = f.label :b_thumb
+    = f.text_field :b_thumb
+  .field
+    = f.label :b_totalStar
+    = f.text_field :b_totalStar
+  .field
+    = f.label :b_starNum
+    = f.text_field :b_starNum
+  .field
+    = f.label :b_likeCount
+    = f.text_field :b_likeCount
+  .field
+    = f.label :b_belongCount
+    = f.text_field :b_belongCount
+  .actions = f.submit 'Save'

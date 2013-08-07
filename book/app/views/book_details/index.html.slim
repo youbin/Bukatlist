@@ -1,0 +1,33 @@
+h1 Listing book_details
+
+table
+  tr
+    th B
+    th B title
+    th B category
+    th B author
+    th B translator
+    th B publisher
+    th B publishdate
+    th B date
+    th
+    th
+    th
+
+  - @book_details.each do |book_detail|
+    tr
+      td = book_detail.b_id
+      td = book_detail.b_title
+      td = book_detail.b_category
+      td = book_detail.b_author
+      td = book_detail.b_translator
+      td = book_detail.b_publisher
+      td = book_detail.b_publishDate
+      td = book_detail.b_date
+      td = link_to 'Show', book_detail
+      td = link_to 'Edit', edit_book_detail_path(book_detail)
+      td = link_to 'Destroy', book_detail, :confirm => 'Are you sure?', :method => :delete
+
+br
+
+= link_to 'New Book detail', new_book_detail_path

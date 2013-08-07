@@ -1,0 +1,29 @@
+h1 Listing direct_enrolls
+
+table
+  tr
+    th Title
+    th Category
+    th Author
+    th Translator
+    th Publisher
+    th Date
+    th
+    th
+    th
+
+  - @direct_enrolls.each do |direct_enroll|
+    tr
+      td = direct_enroll.title
+      td = direct_enroll.category
+      td = direct_enroll.author
+      td = direct_enroll.translator
+      td = direct_enroll.publisher
+      td = direct_enroll.date
+      td = link_to 'Show', direct_enroll
+      td = link_to 'Edit', edit_direct_enroll_path(direct_enroll)
+      td = link_to 'Destroy', direct_enroll, :confirm => 'Are you sure?', :method => :delete
+
+br
+
+= link_to 'New Direct enroll', new_direct_enroll_path
