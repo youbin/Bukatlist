@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  _id: MyString
+  ObjectID: MyString
+  b_id: MyString
+  b_category: MyString
+  b_author: MyString
+  b_translator: MyString
+  b_publisher: MyString
+  b_publishDate: 2013-08-07
+  b_date: 2013-08-07
+
+two:
+  _id: MyString
+  ObjectID: MyString
+  b_id: MyString
+  b_category: MyString
+  b_author: MyString
+  b_translator: MyString
+  b_publisher: MyString
+  b_publishDate: 2013-08-07
+  b_date: 2013-08-07

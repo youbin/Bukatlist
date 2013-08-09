@@ -1,0 +1,66 @@
+p#notice = notice
+
+p
+  strong _id:
+  = @book._id
+p
+  strong B_id:
+  = @book.b_id
+p
+  strong B_title:
+  = @book.b_title
+p
+  strong B_thumb:
+  = @book.b_thumb
+p
+  strong B_totalstar:
+  = @book.b_totalStar
+p
+  strong B_starnum:
+  = @book.b_starNum
+p
+  strong B_likecount:
+  = @book.b_likeCount
+p
+  strong B_belongcount:
+  = @book.b_belongCount
+p
+  strong B_detail_id:
+  = @book_detail._id
+p
+  strong B_detail_b_id:
+  = @book_detail.b_id
+p
+  strong B_detail_title:
+  = @book_detail.b_title
+p
+  strong B_detail_category:
+  = @book_detail.b_category
+p
+  strong B_detail_author:
+  = @book_detail.b_author
+p
+  strong B_detail_translator:
+  = @book_detail.b_translator
+p
+  strong B_detail_publisher:
+  = @book_detail.b_publisher
+p
+  strong B_detail_publishDate:
+  = @book_detail.b_publishDate
+p
+  strong B_detail_date:
+  = @book_detail.b_date
+p
+  strong B_review_id:
+  = @book_review._id
+p
+  strong B_review_b_id:
+  = @book_review.b_id
+p
+  strong B_review_b_review:
+  = @book_review.b_reiviews
+
+= link_to 'Edit', edit_book_path(@book)
+'|
+= link_to 'Back', books_path

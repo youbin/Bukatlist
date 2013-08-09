@@ -1,0 +1,55 @@
+= form_for (@book) do |f|
+  - if @book.errors.any?
+    #error_explanation
+      h2 = "#{pluralize(@book.errors.count, "error")} prohibited this book from being saved:"
+      ul
+        - @book.errors.full_messages.each do |message|
+          li = message
+
+  .field
+    = f.label :b_id
+    = f.text_field :b_id
+  .field
+    = f.label :b_title
+    = f.text_field :b_title
+  .field
+    = f.label :b_thumb
+    = f.text_field :b_thumb
+  .field
+    = f.label :b_totalStar
+    = f.text_field :b_totalStar
+  .field
+    = f.label :b_starNum
+    = f.text_field :b_starNum
+  .field
+    = f.label :b_likeCount
+    = f.text_field :b_likeCount
+  .field
+    = f.label :b_belongCount
+    = f.text_field :b_belongCount
+
+  = fields_for (@book_detail) do |f1|
+    .field
+      = f1.label :b_category
+      = f1.text_field :b_category
+    .field
+      = f1.label :b_author
+      = f1.text_field :b_author
+    .field
+      = f1.label :b_translator
+      = f1.text_field :b_translator
+    .field
+      = f1.label :b_publisher
+      = f1.text_field :b_publisher
+    .field
+      = f1.label :b_publishDate
+      = f1.date_select :b_publishDate
+    .field
+      = f1.label :b_date
+      = f1.date_select :b_date
+
+    = fields_for (@book_review) do |f2|
+      .field
+        = f2.label :b_reviews
+        = f2.text_field :b_reviews
+  .actions = f.submit 'Save'

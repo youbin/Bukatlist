@@ -1,0 +1,71 @@
+h1 Listing books
+
+table
+  tr
+    th b_review_id
+    th b_review_b_id
+    th b_review_b_reviews
+
+  - @book_reviews.each do |book_review|
+    tr
+      td = book_review._id
+      td = book_review.b_id
+      td = book_review.b_reviews
+  tr
+
+table
+  tr
+    th b_detail_id
+    th b_detail_b_id
+    th b_detail_title
+    th b_detail_category
+    th b_detail_author
+    th b_detail_translator
+    th b_detail_publisher
+    th b_detail_publishDate
+    th b_detail_date
+
+  - @book_details.each do |book_detail|
+    tr
+      td = book_detail._id
+      td = book_detail.b_id
+      td = book_detail.b_title
+      td = book_detail.b_category
+      td = book_detail.b_author
+      td = book_detail.b_translator
+      td = book_detail.b_publisher
+      td = book_detail.b_publishDate
+      td = book_detail.b_date
+
+  tr
+table
+  tr
+    th _id
+    th B_id
+    th B_title
+    th B_thumb
+    th B_totalstar
+    th B_starnum
+    th B_likecount
+    th B_belongcount
+    th
+    th
+    th
+
+  - @books.each do |book|
+    tr
+      td = book._id
+      td = book.b_id
+      td = book.b_title
+      td = book.b_thumb
+      td = book.b_totalStar
+      td = book.b_starNum
+      td = book.b_likeCount
+      td = book.b_belongCount
+      td = link_to 'Show', book
+      td = link_to 'Edit', edit_book_path(book)
+      td = link_to 'Destroy', book, :confirm => 'Are you sure?', :method => :delete
+
+br
+
+= link_to 'New Book', new_book_path

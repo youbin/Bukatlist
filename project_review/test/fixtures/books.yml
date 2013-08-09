@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  _id: 
+  b_id: 
+  b_title: MyString
+  b_thumb: MyString
+  b_totalStar: 
+  b_starNum: 
+  b_likeCount: 
+  b_belongCount: 
+
+two:
+  _id: 
+  b_id: 
+  b_title: MyString
+  b_thumb: MyString
+  b_totalStar: 
+  b_starNum: 
+  b_likeCount: 
+  b_belongCount: 
