@@ -1,0 +1,110 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:stretchColumns="1">
+        <TableRow >
+			<ImageView 
+			    android:id="@+id/leftButton"
+		    	android:src="@drawable/back"
+		    	android:padding="5dp"
+		    	android:layout_width="50dp"
+		    	android:layout_height="50dp"/>
+		    	
+		    <TextView
+		        android:id="@+id/title"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center"
+		        android:textSize="25sp"
+		        android:text="Bukatlist"
+		        android:textColor="#000000"/>
+	
+		    <ImageView
+		        android:id="@+id/rightButton"
+		        android:src="@drawable/ic_launcher"
+		        android:padding="5dp"
+		        android:layout_width="50dp"
+		        android:layout_height="50dp"/>
+        </TableRow>
+    </TableLayout>
+    <ImageView 
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:src="@drawable/dash_line"/>
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+        <ImageView 
+		    android:src="@drawable/user"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:padding="10dp"/>
+        <TextView 
+            android:id="@+id/u_nickName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:textSize="20sp"
+            android:text="Jaeeo"/>
+        <TextView 
+            android:id="@+id/u_motd"
+            android:layout_width="200dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:textSize="20sp"
+            android:text="책을 좋아합니다. 저를 팔로우해 주세요."/>
+        <TableLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:stretchColumns="0,2">
+		    <TableRow >
+		        <LinearLayout 
+		            android:layout_width="wrap_content"
+		            android:layout_height="fill_parent"
+		            android:orientation="horizontal">
+		            <ImageView 
+		                android:src="@drawable/ic_launcher"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"/>
+		            <TextView 
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_gravity="center"
+		                android:padding="10dp"
+		                android:textSize="20sp"
+		                android:text="내 서재"/>
+		        </LinearLayout>
+		        <LinearLayout 
+		            android:layout_width="wrap_content"
+		            android:layout_height="fill_parent"
+		            android:orientation="horizontal">
+		            <ImageView 
+		                android:src="@drawable/ic_launcher"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"/>
+		            <TextView 
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_gravity="center"
+		                android:padding="10dp"
+		                android:textSize="20sp"
+		                android:text="Follow"/>
+		        </LinearLayout>
+		    </TableRow>
+            
+        </TableLayout>
+        
+    </LinearLayout>
+
+</LinearLayout>

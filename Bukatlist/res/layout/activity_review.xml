@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".OptionActivity" >
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:stretchColumns="1">
+        <TableRow >
+			<ImageView 
+			    android:id="@+id/leftButton"
+		    	android:src="@drawable/back"
+		    	android:padding="5dp"
+		    	android:layout_width="50dp"
+		    	android:layout_height="50dp"/>
+		    	
+		    <TextView
+		        android:id="@+id/title"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center"
+		        android:textSize="25sp"
+		        android:text="Bukatlist"
+		        android:textColor="#000000"/>
+	
+		    <ImageView
+		        android:id="@+id/rightButton"
+		        android:src="@drawable/ic_launcher"
+		        android:padding="5dp"
+		        android:layout_width="50dp"
+		        android:layout_height="50dp"/>
+        </TableRow>
+    </TableLayout>
+    <ImageView 
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:src="@drawable/dash_line"/>
+    <ListView 
+        android:id="@+id/reviewList"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+    </ListView>
+
+</LinearLayout>
