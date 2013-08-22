@@ -1,4 +1,4 @@
-package soma.project.bukatlist;
+package soma.project.object;
 
 import java.util.ArrayList;
 

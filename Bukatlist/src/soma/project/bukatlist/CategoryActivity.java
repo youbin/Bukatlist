@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import org.json.JSONObject;
 
 import soma.project.bukatlist.R;
+import soma.project.object.Category;
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Context;

@@ -3,6 +3,7 @@ package soma.project.bukatlist;
 import java.util.ArrayList;
 
 import soma.project.bukatlist.R;
+import soma.project.object.Follow;
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Context;

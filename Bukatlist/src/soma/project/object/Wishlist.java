@@ -1,15 +1,16 @@
-package soma.project.bukatlist;
+package soma.project.object;
 
+import java.util.ArrayList;
 
 import android.content.Context;
 
-public class CategoryDetail {
+public class Wishlist {
 	private int c_id;
 	private Object c_book1;
 	private Object c_book2;
 	private Object c_book3;
 	
-	public CategoryDetail(Context context, int c_id, Object c_book1, Object c_book2,
+	public Wishlist(Context context, int c_id, Object c_book1, Object c_book2,
 			Object c_book3) {
 		super();
 		this.c_id = c_id;
