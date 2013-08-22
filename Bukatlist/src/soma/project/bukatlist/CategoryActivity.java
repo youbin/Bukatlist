@@ -29,7 +29,7 @@ public class CategoryActivity extends Activity {
 		listView = (ListView) findViewById(R.id.listView1);
 		list = new ArrayList<Category>();
 
-		View header = getLayoutInflater().inflate(R.layout.header_book, null, false);
+		View header = getLayoutInflater().inflate(R.layout.header_category, null, false);
 		listView.addHeaderView(header);
 
 		adapter = new DataAdapter(this, list);

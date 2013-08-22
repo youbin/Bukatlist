@@ -30,7 +30,7 @@ public class BookShelfActivity extends Activity {
 		listView = (ListView) findViewById(R.id.listView1);
 		list = new ArrayList<BookShelf>();
 		
-		View header = getLayoutInflater().inflate(R.layout.header_book, null, false);
+		View header = getLayoutInflater().inflate(R.layout.header_category, null, false);
 		listView.addHeaderView(header);
 
 		adapter = new DataAdapter(this, list);
@@ -61,7 +61,7 @@ public class BookShelfActivity extends Activity {
 			View view = null;
 			
 			if(v == null){
-				view = inflater.inflate(R.layout.list_category, null);
+				view = inflater.inflate(R.layout.list_bookshelf, null);
 			} else {
 				view = v;
 			}
