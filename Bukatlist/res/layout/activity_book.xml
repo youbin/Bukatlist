@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BookActivity"
+    android:orientation="vertical" >
+
+   	<TableLayout
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal"
+    	android:paddingBottom="3dp"
+	    android:paddingTop="3dp"
+    	android:paddingLeft="5dp"
+    	android:paddingRight="5dp"
+    	android:layout_marginBottom="3dp"
+    	android:stretchColumns="1">
+        <TableRow>
+            <ImageView
+	        	android:id="@+id/leftButton"
+    	    	android:background="@drawable/setting"
+        		android:layout_width="40dp"
+ 	   	 		android:layout_height="40dp" />
+            
+            <TextView
+		        android:layout_width="wrap_content"
+       			android:layout_height="wrap_content"
+		        android:textSize="35sp"
+		        android:layout_gravity="center"
+        		android:text="Buk At List"/>
+            
+            <ImageView
+		        android:id="@+id/rightButton"
+        		android:background="@drawable/setting"
+        		android:layout_width="40dp"
+ 	    		android:layout_height="40dp" />
+        </TableRow>
+    </TableLayout>
+    
+    <LinearLayout 
+        android:orientation="horizontal"
+ 	    android:layout_width="wrap_content"
+ 	    android:layout_height="wrap_content">
+        <View
+			android:layout_width="fill_parent"
+ 			android:layout_height="1dp"
+ 			android:background="@drawable/dash_line" />
+    </LinearLayout>
+    
+    <ListView
+		android:layout_height="wrap_content"
+		android:id="@+id/listView1"
+		android:layout_width="fill_parent"
+		android:layout_margin="5dp"/>
+</LinearLayout>
