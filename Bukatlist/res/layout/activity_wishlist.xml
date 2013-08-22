@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CategoryActivity"
+    tools:context=".BookDetailActivity"
     android:orientation="vertical" >
 
    	<TableLayout
@@ -11,7 +11,7 @@
     	android:layout_height="wrap_content"
     	android:orientation="horizontal"
     	android:paddingBottom="3dp"
-	    android:paddingTop="3dp"
+	    android:paddingTop="10dp"
     	android:paddingLeft="5dp"
     	android:paddingRight="5dp"
     	android:layout_marginBottom="3dp"
@@ -19,7 +19,7 @@
         <TableRow>
             <ImageView
 	        	android:id="@+id/leftButton"
-    	    	android:background="@drawable/setting"
+    	    	android:background="@drawable/back"
         		android:layout_width="40dp"
  	   	 		android:layout_height="40dp" />
             
@@ -28,7 +28,7 @@
        			android:layout_height="wrap_content"
 		        android:textSize="35sp"
 		        android:layout_gravity="center"
-        		android:text="Buk At List"/>
+        		android:text="Wishlist"/>
             
             <ImageView
 		        android:id="@+id/rightButton"
