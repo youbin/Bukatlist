@@ -35,14 +35,14 @@ public class FollowActivity extends Activity {
 		adapter = new DataAdapter(this, list);
 		
 		listView.setAdapter(adapter);
-		adapter.add(new Follow(getApplicationContext(), 1, "模备1", R.drawable.follow));
-		adapter.add(new Follow(getApplicationContext(), 1, "模备2", R.drawable.follow));
-		adapter.add(new Follow(getApplicationContext(), 1, "模备3", R.drawable.follow));
-		adapter.add(new Follow(getApplicationContext(), 1, "模备4", R.drawable.follow));
-		adapter.add(new Follow(getApplicationContext(), 1, "模备5", R.drawable.follow));
-		adapter.add(new Follow(getApplicationContext(), 1, "模备6", R.drawable.follow));
-		adapter.add(new Follow(getApplicationContext(), 1, "模备7", R.drawable.follow));
-		adapter.add(new Follow(getApplicationContext(), 1, "模备8", R.drawable.follow));
+		adapter.add(new Follow(getApplicationContext(), 1, "模锟斤拷1", R.drawable.follow));
+		adapter.add(new Follow(getApplicationContext(), 1, "模锟斤拷2", R.drawable.follow));
+		adapter.add(new Follow(getApplicationContext(), 1, "模锟斤拷3", R.drawable.follow));
+		adapter.add(new Follow(getApplicationContext(), 1, "模锟斤拷4", R.drawable.follow));
+		adapter.add(new Follow(getApplicationContext(), 1, "模锟斤拷5", R.drawable.follow));
+		adapter.add(new Follow(getApplicationContext(), 1, "模锟斤拷6", R.drawable.follow));
+		adapter.add(new Follow(getApplicationContext(), 1, "模锟斤拷7", R.drawable.follow));
+		adapter.add(new Follow(getApplicationContext(), 1, "模锟斤拷8", R.drawable.follow));
 
 	}
 
@@ -66,7 +66,7 @@ public class FollowActivity extends Activity {
 			View view = null;
 			
 			if(v == null){
-				view = inflater.inflate(R.layout.listview_follow, null);
+				view = inflater.inflate(R.layout.list_follow, null);
 			} else {
 				view = v;
 			}

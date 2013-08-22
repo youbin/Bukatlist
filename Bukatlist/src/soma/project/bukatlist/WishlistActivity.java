@@ -57,7 +57,7 @@ public class WishlistActivity extends Activity {
 			View view = null;
 			
 			if(v == null){
-				view = inflater.inflate(R.layout.listview_wishlist, null);
+				view = inflater.inflate(R.layout.list_wishlist, null);
 			} else {
 				view = v;
 			}

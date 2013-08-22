@@ -1,47 +1,90 @@
 package soma.project.bukatlist;
 
+import java.util.ArrayList;
 
+import org.json.JSONObject;
+
+import soma.project.bukatlist.R;
+import soma.project.object.BookShelf;
+import android.os.Bundle;
+import android.app.Activity;
 import android.content.Context;
+import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
+import android.widget.ImageView;
+import android.widget.ListView;
 
-public class BookShelfActivity {
-	private int c_id;
-	private Object c_book1;
-	private Object c_book2;
-	private Object c_book3;
+public class BookShelfActivity extends Activity {
+	private ArrayList<BookShelf> list;
+	DataAdapter adapter;
+	private ListView listView;
 	
-	public BookShelfActivity(Context context, int c_id, Object c_book1, Object c_book2,
-			Object c_book3) {
-		super();
-		this.c_id = c_id;
-		this.c_book1 = c_book1;
-		this.c_book2 = c_book2;
-		this.c_book3 = c_book3;
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_bookshelf);
+		
+		listView = (ListView) findViewById(R.id.listView1);
+		list = new ArrayList<BookShelf>();
+		
+		View header = getLayoutInflater().inflate(R.layout.header_book, null, false);
+		listView.addHeaderView(header);
+
+		adapter = new DataAdapter(this, list);
+		
+		listView.setAdapter(adapter);
+		adapter.add(new BookShelf(getApplicationContext(), "id", "name", "color", 1, R.drawable.setting));
+		adapter.add(new BookShelf(getApplicationContext(), "id", "name", "color", 1, R.drawable.setting));
+		adapter.add(new BookShelf(getApplicationContext(), "id", "name", "color", 1, R.drawable.setting));
 	}
-	public int getC_id() {
-		return c_id;
-	}
-	public void setC_id(int c_id) {
-		this.c_id = c_id;
-	}
-	public Object getC_book1() {
-		return c_book1;
-	}
-	public void setC_book1(Object c_book1) {
-		this.c_book1 = c_book1;
-	}
-	public Object getC_book2() {
-		return c_book2;
-	}
-	public void setC_book2(Object c_book2) {
-		this.c_book2 = c_book2;
-	}
-	public Object getC_book3() {
-		return c_book3;
-	}
-	public void setC_book3(Object c_book3) {
-		this.c_book3 = c_book3;
+
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		// Inflate the menu; this adds items to the action bar if it is present.
+		getMenuInflater().inflate(R.menu.book, menu);
+		return true;
 	}
 	
-	
-	
+	private class DataAdapter extends ArrayAdapter<BookShelf> {
+		private LayoutInflater inflater;
+		
+		public DataAdapter(Context context, ArrayList<BookShelf> object) {
+			super(context, 0, object);
+			inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+			// TODO Auto-generated constructor stub
+		}
+
+		public View getView(int position, View v, ViewGroup parent) {
+			View view = null;
+			
+			if(v == null){
+				view = inflater.inflate(R.layout.list_category, null);
+			} else {
+				view = v;
+			}
+			
+			final BookShelf data = this.getItem(position);
+			
+			if (data != null) {
+//				TextView tView1 = (TextView) view.findViewById(R.id.textView1);
+				
+//				tView1.setText(data.getC_id());
+				
+				ImageView iView1 = (ImageView) view.findViewById(R.id.imageView1);
+				ImageView iView2 = (ImageView) view.findViewById(R.id.imageView2);
+				ImageView iView3 = (ImageView) view.findViewById(R.id.imageView3);
+				
+				iView1.setImageResource(data.getC_bookCount());
+				iView1.setImageResource(data.getC_bookCount());
+				iView1.setImageResource(data.getC_bookCount());
+			}
+			return view;
+		}
+		
+		
+	}
+
 }

@@ -27,7 +27,7 @@ public class BookActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_category);
+        setContentView(R.layout.activity_book);
         listView = (ListView)findViewById(R.id.bookList);
         review_list = new ArrayList<Review>();
         review_list.add(new Review("jaeeo", "jaeeo", "d"));

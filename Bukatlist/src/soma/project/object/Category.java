@@ -1,54 +1,47 @@
 package soma.project.object;
 
+
 import android.content.Context;
 
 public class Category {
-	private String c_id;
-	private String c_name;
-	private String c_color;
-	private int c_bookCount;
-	private int c_mainThumb;
-	
+	private int c_id;
+	private Object c_book1;
+	private Object c_book2;
+	private Object c_book3;
 
-	public Category(Context context, String c_id, String c_name, String c_color,
-			int c_bookCount, int c_mainThumb) {
+	public Category(Context context, int c_id, Object c_book1, Object c_book2,
+			Object c_book3) {
 		super();
 		this.c_id = c_id;
-		this.c_name = c_name;
-		this.c_color = c_color;
-		this.c_bookCount = c_bookCount;
-		this.c_mainThumb = c_mainThumb;
+		this.c_book1 = c_book1;
+		this.c_book2 = c_book2;
+		this.c_book3 = c_book3;
 	}
-	public String getC_id() {
+	public int getC_id() {
 		return c_id;
 	}
-	public void setC_id(String c_id) {
+	public void setC_id(int c_id) {
 		this.c_id = c_id;
 	}
-	public String getC_name() {
-		return c_name;
+	public Object getC_book1() {
+		return c_book1;
 	}
-	public void setC_name(String c_name) {
-		this.c_name = c_name;
+	public void setC_book1(Object c_book1) {
+		this.c_book1 = c_book1;
 	}
-	public String getC_color() {
-		return c_color;
+	public Object getC_book2() {
+		return c_book2;
 	}
-	public void setC_color(String c_color) {
-		this.c_color = c_color;
+	public void setC_book2(Object c_book2) {
+		this.c_book2 = c_book2;
 	}
-	public int getC_bookCount() {
-		return c_bookCount;
+	public Object getC_book3() {
+		return c_book3;
 	}
-	public void setC_bookCount(int c_bookCount) {
-		this.c_bookCount = c_bookCount;
-	}
-	public int getC_mainThumb() {
-		return c_mainThumb;
-	}
-	public void setC_mainThumb(int c_mainThumb) {
-		this.c_mainThumb = c_mainThumb;
+	public void setC_book3(Object c_book3) {
+		this.c_book3 = c_book3;
 	}
 
-	
+
+
 }

@@ -39,7 +39,7 @@ public class NewsfeedActivity extends Activity {
 			
 			@Override
 			public void onClick(View v) {
-				Intent intent = new Intent(getBaseContext(), CategoryActivity.class);
+				Intent intent = new Intent(getBaseContext(), BookShelfActivity.class);
 				startActivity(intent);
 			}
 		});

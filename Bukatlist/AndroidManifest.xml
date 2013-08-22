@@ -43,7 +43,7 @@
             android:name="soma.project.bukatlist.BarcodeActivity"
             android:label="@string/app_name" >
         </activity>
-        <activity android:name="soma.project.bukatlist.CategoryActivity">
+        <activity android:name="soma.project.bukatlist.BookShelfActivity">
         </activity>
         <activity android:name="soma.project.bukatlist.BookDetailActivity">
         </activity> 
